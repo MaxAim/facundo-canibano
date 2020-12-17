@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <div class="col-2 main__ofertas">
-                    <img src="img/ofertas.jpg" class="background main__ofertas--especial" alt="Ofertas">
+                    <a class="pop"><img src="img/ofertas.jpg" class="background main__ofertas--especial" alt="Ofertas"></a>
                     <a href="productos.html#kimetsu"><img src="img/kimetsu.jpg" class="img-fluid background main_ofertas--recomendado" alt="Movie Version Demon Slayer: Kimetsu no Yaiba infinite train ed Visitor Bonus Koyoharu Gotouge purgatory zero Vol"></a>
                     <a href="productos.html#kimetsu2"><img src="img/kimetsu2.jpg" class="img-fluid background main__ofertas-recomendado" alt=">ACOS / Demon Slayer: Kimetsu no Yaiba / Parker / Tanjiro Kamado / L Size (Japanese Size)"></a>
                     <a href="productos.html#onepiece2"><img src="img/onepiece2.jpg" class="img-fluid background main__ofertas--recomendado" alt="メガハウス POP/ワンピース 【トニートニー・チョッパー/Tonytony.Chopper】"></a>
@@ -106,5 +106,23 @@
             <nav>Twitter</nav>
             <p id="yo">Cañibano Facundo</p>
         </footer>
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" data-dismiss="modal">
+                <div class="modal-content"  >              
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <img src="" class="imagepreview" style="width: 100%;" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+             $(function() {
+            $('.pop').on('click', function() {
+                $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                $('#imagemodal').modal('show');   
+            });     
+    });
+        </script>
     </body>
 </html>
