@@ -37,12 +37,15 @@
         </header>
         <main class="animate__animated animate__fadeIn">
             <form>
-                <fieldset class="background">
+                <fieldset class="background row">
                     <legend>Informacion personal</legend>
-                    <p>Nombre:</p><input type="text" name="contacto" class="main__input" placeholder="Nombre">
-                    <p>Direccion:</p><input type="text" class="main__input" placeholder="Direccion">
-                    <p>Telefono:</p><input type="text" class="main__input" placeholder="Telefono">
-                    <p>Informacion extra:</p><textarea name="extra" rows="20" class="main__input" placeholder="Informacion extra"></textarea>
+                    <div class="col-lg-6 col-12">
+                        <p>Nombre:</p><input type="text" name="contacto" class="main__input" placeholder="Nombre">
+                        <p>Direccion:</p><input type="text" class="main__input" placeholder="Direccion">
+                        <p>Telefono:</p><input type="text" class="main__input" placeholder="Telefono">
+                        <p>Informacion extra:</p><textarea name="extra" rows="20" class="main__input" placeholder="Informacion extra"></textarea>
+                    </div>
+                    <img src="img/contacto.png" class="mobile__off">
                 </fieldset>
                 <fieldset class="background full-width">
                     <legend>Forma de pago</legend>
@@ -53,10 +56,10 @@
                 </fieldset>
                 <fieldset class="background full-width">
                     <legend>Confirmar</legend>
-                    <p>Acepto las condicones</p><input type="checkbox" value="0">
-                    <p>Quiero recibir el newsletter</p><input type="checkbox" value="1">
-                    <input type="reset" value="Limpiar" class="main__input main__input--btn">
-                    <input type="submit" value="  Enviar   " class="main__input main__input--btn">
+                    <p>Acepto las condiciones </p><input type="checkbox" value="0">
+                    <p>Quiero recibir el newsletter </p><input type="checkbox" value="1">
+                    <input type="reset" value="Limpiar" class="main__input main__input--btn col-lg-2">
+                    <input type="submit" value="  Enviar   " class="main__input main__input--btn col-lg-2">
                 </fieldset>
             </form>
         </main>
