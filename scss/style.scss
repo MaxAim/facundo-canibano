@@ -36,6 +36,13 @@ body{
         font-size: 1rem;
     }
 }
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 20px;
+    margin-bottom: 40px;
+}
 .main__input{
     display: block;
     margin: 10px;
@@ -45,7 +52,15 @@ body{
     }
 }
 footer{
-    width: $full-width;
+    img{
+        width: 100px;
+        border-radius: 10%;
+        margin-bottom: 3%;
+    }
+    p{
+        justify-content: center;
+        display: flex;
+    }
 }
 .menu__desktop{
     display: flex;
@@ -78,12 +93,15 @@ h1 {
     padding: 2%;
 }
 
-legend, h1, h2, p, .white, nav{
+legend, h1, h2, p, .white{
     color: $base-color;
 }
-b, #yo{
+i{
     color: $flag-color;
     font-family: $special-font;
+}
+b{
+    font-family: sans-serif;
 }
 main{
     padding-top: 8%;
@@ -100,15 +118,20 @@ main{
 .menu__mobile, .mobile__on{
     display: none;
 }
-fieldset p{
-    display: inline;
+fieldset{
+    width: $full-width;
+    p{
+        display: inline;
+    }
+    img{
+        height: 600px;
+    }
 }
 .table-dark{
     @extend .background;
     position: relative;
-    right: 2%;
     color:$base-color;
-    width: $full-width;
+    width: 96%;
     th{
         width: 20%;
         img{
@@ -121,12 +144,22 @@ iframe{
     height: 360px;
     width: auto;
 }
+.accept{
+    margin: 4%;
+}
+#gcw_mainF5KndqjFc{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    
+}
 @media only screen and (max-width: 1039px) {
     .menu__desktop, .main__ofertas, .mobile__off{
         display: none;
     }
     main{
-        margin-top: 50px;
+        margin-top: 60px;
     }
     .image-hero-area {
         position: fixed;
@@ -208,5 +241,18 @@ iframe{
         padding: 0px;
         margin: 0px;
         margin-top: 80px;
+    }
+    #gcw_mainF5KndqjFc{
+        position: relative;
+        bottom: 0;
+        right: 2px;
+    }
+    footer{
+        p{
+            display: none;
+        }
+        img{
+            width: 50px;
+        }
     }
 }
