@@ -36,11 +36,15 @@ body{
         font-size: 1rem;
     }
 }
-h2{
+h3{
+    color: $base-color;
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
     margin: 20px;
+}
+ h2{
+    @extend h3;
     margin-bottom: 40px;
 }
 .main__input{
@@ -55,7 +59,7 @@ footer{
     img{
         width: 100px;
         border-radius: 10%;
-        margin-bottom: 3%;
+        margin-bottom: 30px;
     }
     p{
         justify-content: center;
@@ -88,20 +92,21 @@ footer{
     }
 }
 h1 {
+    color: $base-color;
     font-size: 1.9rem;
     font-family: $special-font;
     padding: 2%;
 }
-
-legend, h1, h2, p, .white{
+legend, p, .white{
     color: $base-color;
 }
-i{
+b{
     color: $flag-color;
     font-family: $special-font;
 }
-b{
-    font-family: sans-serif;
+i{
+    font-family: $special-font;
+    font-weight: 900;
 }
 main{
     padding-top: 8%;
@@ -141,19 +146,18 @@ fieldset{
 }
 iframe{
     margin: 20px;
-    height: 360px;
     width: auto;
 }
-.accept{
-    margin: 4%;
+.envios{
+    height: 340px;
+    margin: 20px;
 }
 #gcw_mainF5KndqjFc{
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 10;
-    
-}
+ }
 @media only screen and (max-width: 1039px) {
     .menu__desktop, .main__ofertas, .mobile__off{
         display: none;
@@ -181,8 +185,12 @@ iframe{
         flex-direction: column;
     }
     h1{
-        padding-top: 20px;
+        padding-top: 23px;
         padding-left: 5%;
+        font-size: 1.6rem;
+    }
+    h2{
+        font-size: 2rem;
     }
     #dropdownMenuLink{
         width: 150%;
@@ -220,7 +228,7 @@ iframe{
         border-radius: 1%;
     }
     .main__input{
-        width: 90%;
+        width: 94%;
     }
     input{
         display: block;
@@ -254,5 +262,10 @@ iframe{
         img{
             width: 50px;
         }
+    }
+    iframe, .envios{
+        height: auto;
+        margin: 0;
+        margin-bottom: 20px;
     }
 }
